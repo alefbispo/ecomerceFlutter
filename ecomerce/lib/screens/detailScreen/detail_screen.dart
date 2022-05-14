@@ -23,12 +23,10 @@ class _DetailScreenState extends State<DetailScreen> {
         physics: BouncingScrollPhysics(),
         children: [
           ListTile(
-            leading: const CircleAvatar(
+            leading: CircleAvatar(
               radius: 35,
               backgroundColor: Colors.transparent,
-              backgroundImage: AssetImage(
-                'images/Logo.png',
-              ),
+              backgroundImage: NetworkImage(widget.data.productImage),
             ),
             title: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
