@@ -47,11 +47,12 @@ class _DetailScreenState extends State<DetailScreen> {
               children: [
                 Text(
                   widget.data.productPrice.toString(),
-                  style: DetailScreenStyle.commpanyTitleStyle,
+                  style: DetailScreenStyle.productPriceStyle,
                 ),
+                const SizedBox(height: 5),
                 Text(
                   widget.data.productOldPrice.toString(),
-                  style: DetailScreenStyle.commpanyTitleStyle,
+                  style: DetailScreenStyle.productOldPriceStyle,
                 ),
               ],
             ),
